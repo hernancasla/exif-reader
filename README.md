@@ -44,6 +44,8 @@ const gpsCoordinates = ExifManager.getGPSCoordinates(gpsData);
 
 ## API
 
+- Full docs: see `docs/` for the [Quickstart](docs/quickstart.md) and [API Reference](docs/api/README.md).
+
 ### ExifManager.readExif(imageSrc: string, basicExifInfo?: BasicExifInfo): Promise<{ keyValueExif: ExifKeyValue[], exifData: ExifData }>
 Reads EXIF data from a base64 image or URL. If no EXIF is found and `basicExifInfo` is provided, it generates basic EXIF data and merges missing fields.
 
@@ -91,6 +93,11 @@ interface BasicExifInfo {
   GPSLongitude?: number;
 }
 ```
+
+## Contributing
+
+- Issues and PRs are welcome. Please include tests for new features.
+- Run tests with `npm test`.
 
 ## License
 
